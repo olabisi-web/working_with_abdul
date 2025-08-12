@@ -53,3 +53,6 @@ print(fruits[2])   # banana (third element)
 
 items = ["rice", "beans", "yam", "rice"]
 print(items) # ['rice', beans', yam', rice']
+
+name = "bisi"
+print(name)
