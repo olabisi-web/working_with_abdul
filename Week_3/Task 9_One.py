@@ -12,7 +12,27 @@
 
 # Task1_9
 # USSD_CODe
+balance = 25000
+# Welcome_to_Nigerian_Bank = input("Welcome to Nigerian bank: ")
+print("Welcome to Nigerian bank you can do all your transaction here")
+# Else:
 Ussd_code = input("Enter your ussd_code: ")
 print(f"your ussd_code is: {Ussd_code}")
-# Else:
-print("Welcome you can do all your transaction here ")
+while True:
+    print("\nAccount Menu:")
+    print("1. Check account balance")
+    print("2. Buy airtime")
+    print("3. Buy data")
+    choice = input("Enter your choice here:")
+    if choice == "1":
+         print(f"your account balance is: {balance}")
+    elif choice == "2":
+        amount = int(input("Enter amount of airtime: "))
+        if amount <= balance:    
+         print(f"airtime successful. New balance: {balance}")
+    elif choice == "3":
+        amount = int(input("Enter amount of data: "))
+        print(f"data successful. New balance: {balance}")   
+    else:
+       print ("Thank you for using our ATM. Goodbye!")    
+
